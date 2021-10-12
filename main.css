@@ -1,0 +1,254 @@
+/*
+This is a good layout for a mobile-first CSS template.
+Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
+Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
+
+Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
+You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
+*/
+/*********************************************************************
+ LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
+*********************************************************************/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+
+/*********************************************************************
+  YOUR MOBILE/BASE STYLES GO HERE
+*********************************************************************/
+/* This is what is called a reset. Different browsers have different default padding and margins. Using the * reserts all depault elements to have zero padding and margin. */
+
+h1{
+	margin-bottom: 0px;
+}
+* {
+	font-family: 'Courier Prime', monospace;
+}
+footer{
+	color: grey;
+}
+.small {
+	margin: 0px;
+	font-size: 15px;
+	margin-left: 300px;
+	color: indianred;
+	}
+.medium {
+	margin: 0px;
+	font-size: 25px;
+	margin-left: 300px;
+	color: slategrey;
+}
+.big{
+	font-size: 60px;
+  margin-left: 300px;
+  margin-bottom: 0px;
+}
+figcaption{
+	text-align: center;
+}
+.main_photo{
+	display: block;
+	width: 40%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.caption{
+	font-size: 50%;
+	color: slategrey;
+	padding: 15px;
+}
+.indent{
+	margin-left: 25%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.icon{
+	width: 7.5%;
+	border-radius: 20%;
+	outline-color: whitesmoke;
+	outline-style: solid;
+}
+.icon2{
+	display: inline-flex;
+	width: 7.5%;
+	border-radius: 20%;
+	outline-color: black;
+	outline-style: solid;
+}
+.icon3{
+	display: inline-flex;
+	width: 4%;
+	border-radius: 20%;
+}
+#white_outline{
+	outline-color: white;
+	outline-style: solid;
+	outline-width: 10px;
+	border-radius: 10px;
+	width: 40;
+}
+img {
+     vertical-align:middle;
+}
+span {
+     vertical-align:middle;
+}
+body{
+	background-color: whitesmoke;
+}
+#white_box{
+	background-color: white;
+	padding: 15px;
+	margin: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.byline{
+	font-size: 15px;
+}
+.byline2{
+	font-size: 35px;
+}
+.byline3{
+	font-size: 25px;
+}
+.byline_gold{
+	font-size: 25px;
+	color: gold;
+	text-decoration: underline;
+}
+.byline_silver{
+	font-size: 25px;
+	color: silver;
+	text-decoration: underline;
+}
+.byline_bronze{
+	font-size: 25px;
+	color: #CD7F32;
+	text-decoration: underline;
+}
+.byline_Mahomes{
+	font-size: 25px;
+	color: white;
+	background-color: #e60f31;
+}
+.byline_Brady{
+	font-size: 25px;
+	color: white;
+	background-color: #D50A0A;
+}
+.byline_Prescott{
+	font-size: 25px;
+	color: white;
+	background-color: #003594;
+}
+.byline_Herbert{
+	font-size: 25px;
+	color: white;
+	background-color: #0080C6;
+}
+.byline_Henry{
+	font-size: 25px;
+	color: white;
+	background-color: #4B92DB;
+}
+.byline_Conner{
+	font-size: 25px;
+	color: white;
+	background-color: #97233F;
+}
+.byline_Hunt{
+	font-size: 25px;
+	color: white;
+	background-color: #FF3C00;
+	}
+.byline_Darnold{
+	font-size: 25px;
+	color: white;
+	background-color: #0085ca;
+	}
+.byline_Robinson{
+	font-size: 25px;
+	color: white;
+	background-color: #006778;
+	}
+.byline_Sanders{
+	font-size: 25px;
+	color: white;
+	background-color: #00338D;
+	}
+.byline_Patterson{
+	font-size: 25px;
+	color: white;
+	background-color:#A71930;
+	}
+.byline_Theilen{
+	font-size: 25px;
+	color: white;
+	background-color:#4f2683;
+	}
+.byline_Kupp{
+	font-size: 25px;
+	color: white;
+	background-color:#FFA300;
+}
+.byline_Knox{
+	font-size: 25px;
+	color: white;
+	background-color:#00338D;
+}
+.byline_Metcalf{
+	font-size: 25px;
+	color: white;
+	background-color:#66C010;
+}
+.byline_Chase{
+	font-size: 25px;
+	color: white;
+	background-color:#FB4F14;
+}
+.byline_Brown{
+	font-size: 25px;
+	color: white;
+	background-color:#241773;
+}
+#white_box2{
+    justify-content: safe left;
+    margin-left: auto;
+	margin-right: auto;
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 5px;
+}
+#footer{
+	color: white;
+	width: fit-content;
+	width: -moz-fit-content;
+  width: fit-content;
+  background-color: slategrey;
+  padding: 10px;
+  border-style: solid;
+  border-color: black;
+}
+/*********************************************************************
+  YOUR TABLET/DESKTOP STYLES GO HERE
+*********************************************************************/
+@media(min-width: 681px) {
+
+
+}
+
+
+/*********************************************************************
+  YOUR DESKTOP-ONLY STYLES GO HERE
+*********************************************************************/
+@media(min-width: 780px) {
+
+    /*ADD HERE*/
+
+}
